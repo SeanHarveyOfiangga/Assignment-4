@@ -3,13 +3,12 @@
 # Display the output in the following format.
 # The total amount is ______.
 
-def Apple_Orange (Apple, Orange):
+def Apple_Orange ():
+    Apple = int(input("How many apples do you want to buy? : "))
+    Orange = int(input("How many oranges do you want to buy? : "))
     PriceApple = 20
     PriceOrange = 25
     Amount = (Apple*PriceApple) + (Orange*PriceOrange)
     print (f"The total amount is {Amount}.")
 
-Apple = int(input("How many apples do you want to buy? : "))
-Orange = int(input("How many oranges do you want to buy? : "))
-
-Apple_Orange (Apple, Orange)
+Apple_Orange ()

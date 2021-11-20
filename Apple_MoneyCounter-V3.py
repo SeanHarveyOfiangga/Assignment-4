@@ -3,12 +3,11 @@
 # Display the output in the following format.
 # You can buy ___ apples and your change is ___ pesos.
 
-def Apples (Money, Price):
-    AppleCount = Money // Price
-    Change = Money - (Price*AppleCount)
+def Apples ():
+    AmountMoney = float(input(f"Enter the amount of money you have: "))
+    PriceApple = float(input("Enter how much is the cost of an apple: "))
+    AppleCount = AmountMoney // PriceApple
+    Change = AmountMoney - (PriceApple*AppleCount)
     print(f"You can buy {AppleCount} apples and your change is {Change} pesos.")
 
-AmountMoney = float(input(f"Enter the amount of money you have: "))
-PriceApple = float(input("Enter how much is the cost of an apple: "))
-
-Apples (AmountMoney, PriceApple)
+Apples ()
